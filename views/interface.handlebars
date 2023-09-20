@@ -1,0 +1,18 @@
+<h1>Controle do Arduino</h1>
+<br>
+<form action="/liga_led" method="post">
+<label for="">Ligar Led</label>
+<button type="submit">Liga</button>
+</form>
+<br>
+<form action="/desliga_led" method="post">
+<label for="">Desligar Led</label>
+<button type="submit">Desliga</button>
+</form>
+<img src="/img/rs.png" alt="" id="brasao">
+{{#if msg}}
+    <p id="lig">{{msg}}</p>
+{{/if}}
+{{#if msg2}}
+    <p id="des">{{msg2}}</p>
+{{/if}}
